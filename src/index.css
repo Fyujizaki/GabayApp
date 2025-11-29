@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .stitch-border {
+    border: 1px dashed #c5a028;
+  }
+  .glass-panel {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+
+/* Leaflet Custom Markers */
+.custom-marker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.user-marker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
