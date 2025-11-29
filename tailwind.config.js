@@ -8,13 +8,18 @@ export default {
   theme: {
     extend: {
       colors: {
+        'barong-navy': '#0c1320ff',
+        'barong-cream': '#f5f5dc',
+        'barong-gold': '#d4af37',
+        'barong-beige': '#f5f5f0',
+        'barong-pink': '#ffd1dc',
         barong: {
           cream: '#F5F5DC',
           beige: '#FDFCF0',
           navy: '#0C1821',
           gold: '#947600', // Darkened for better contrast
           pink: '#E6B8B8',
-          blue: '#334155',
+          blue: '#151d27ff',
           dark: '#0F172A',
         }
       },

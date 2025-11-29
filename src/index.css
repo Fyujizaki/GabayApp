@@ -7,7 +7,6 @@
     border: 1px dashed #c5a028;
   }
   .glass-panel {
-    background: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(10px);
   }
   .scrollbar-hide::-webkit-scrollbar {
