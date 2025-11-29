@@ -1,4 +1,8 @@
-const apiKey = "AIzaSyAVJ5RK8y3yNiHDnRTkLThT0VJ7JUw_-b8";
+const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
+
+if (!apiKey) {
+    console.warn("Missing VITE_GEMINI_API_KEY in .env file. AI features will be in demo mode.");
+}
 
 export async function generateGeminiContent(prompt, systemInstruction) {
     if (!apiKey) { await new Promise(r => setTimeout(r, 1000)); return "(Demo Mode) This is simulated text. Add API Key to enable real AI."; }
